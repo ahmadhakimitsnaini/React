@@ -2,16 +2,12 @@ import { StrictMode, useEffect, useState } from "react";
 import "./index.css";
 
 function MainContent() {
-  const [second, setSecond] = useState(0);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setSecond((prev) => prev + 1);
-    }, 1000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  });
-  return <p>Detik saat ini {second} second</p>;
+  const quote = ["Hello World", "hallo dunia"];
+  return quote.map((index, name) => (
+    <ul>
+      <li key={name}>{index}</li>
+    </ul>
+  ));
 }
+
 export default MainContent;
