@@ -13,7 +13,7 @@ function Header() {
         </div>
       </div>
       <div className="right">
-        <h1>First React Project</h1>
+        <h1>Learn Basic React</h1>
       </div>
     </div>
   );
